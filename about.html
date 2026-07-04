@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연남 가라오케 찐후기 정보 | 노원더 연남점 상세안내</title>
+    <meta name="description" content="연남동 가라오케 찐후기 정보 페이지. 노원더 연남점 위치, 가격, 시설 정보와 내돈내산 솔직 후기를 확인하세요. 24시 운영, 단체 룸 완비.">
+    <meta name="keywords" content="연남 가라오케, 연남동 가라오케, 연남 가라오케 찐후기, 노원더 연남점, 홍대 가라오케, 연남동 코인노래방, 단체 가라오케, 24시 가라오케, 노원더 가격">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <link rel="canonical" href="https://t3b07-yn-karaoke-real2-1.vercel.app/info">
+    <meta property="og:title" content="연남 가라오케 찐후기 정보 | 노원더 연남점">
+    <meta property="og:description" content="연남동 가라오케 찐후기 정보. 위치, 가격, 시설까지 한눈에 확인하고 예약하세요.">
+    <style>
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; font-size:16px; }
+        body { font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#0a0a0a; color:#e0d5c1; line-height:1.7; }
+        a { color:#d4af37; text-decoration:none; transition:color 0.3s; }
+        a:hover { color:#f0d060; }
+        img, svg { max-width:100%; height:auto; display:block; }
+        .container { max-width:1200px; margin:0 auto; padding:0 20px; }
+
+        /* Header & Navigation */
+        header { background:rgba(10,10,10,0.95); backdrop-filter:blur(12px); border-bottom:1px solid rgba(212,175,55,0.15); position:sticky; top:0; z-index:100; }
+        .header-inner { display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1200px; margin:0 auto; }
+        .logo { font-size:1.4rem; font-weight:700; letter-spacing:-0.5px; color:#d4af37; }
+        .logo:hover { color:#f0d060; }
+        nav { display:flex; gap:28px; align-items:center; }
+        nav a { font-size:0.9rem; color:#c0b8a0; letter-spacing:0.5px; font-weight:400; position:relative; padding-bottom:4px; }
+        nav a::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:#d4af37; transition:width 0.3s; }
+        nav a:hover::after { width:100%; }
+        nav a:hover { color:#d4af37; }
+        .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; padding:5px; }
+        .hamburger span { width:24px; height:2px; background:#d4af37; transition:all 0.3s; border-radius:2px; }
+
+        /* Hero Section */
+        .hero { padding:80px 0 60px; text-align:center; background:linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(20,18,15,1) 100%); }
+        .hero h1 { font-size:2.8rem; font-weight:700; letter-spacing:-1px; color:#f5edd8; margin-bottom:16px; }
+        .hero h1 span { color:#d4af37; }
+        .hero p { font-size:1.15rem; color:#a09880; max-width:700px; margin:0 auto; line-height:1.8; }
+
+        /* Info Grid */
+        .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; padding:60px 0; }
+        .info-card { background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.1); border-radius:16px; padding:32px; backdrop-filter:blur(8px); }
+        .info-card h2 { font-size:1.4rem; color:#d4af37; margin-bottom:20px; display:flex; align-items:center; gap:10px; }
+        .info-card h2::before { content:'◆'; font-size:0.8rem; color:#d4af37; }
+        .info-card ul { list-style:none; }
+        .info-card ul li { padding:10px 0; border-bottom:1px solid rgba(212,175,55,0.06); color:#c8bfa8; font-size:0.95rem; }
+        .info-card ul li:last-child { border-bottom:none; }
+        .info-card ul li strong { color:#e8ddc5; }
+
+        /* Pricing Table */
+        .pricing { padding:40px 0; }
+        .pricing h2 { text-align:center; font-size:2rem; color:#f5edd8; margin-bottom:40px; }
+        .pricing table { width:100%; border-collapse:collapse; background:rgba(255,255,255,0.02); border-radius:16px; overflow:hidden; }
+        .pricing th { background:rgba(212,175,55,0.1); color:#d4af37; padding:16px 20px; text-align:left; font-weight:600; }
+        .pricing td { padding:14px 20px; border-bottom:1px solid rgba(212,175,55,0.06); color:#c8bfa8; }
+        .pricing tr:last-child td { border-bottom:none; }
+        .pricing tr:hover td { background:rgba(212,175,55,0.03); }
+
+        /* Review Cards */
+        .reviews { padding:60px 0; }
+        .reviews h2 { text-align:center; font-size:2rem; color:#f5edd8; margin-bottom:40px; }
+        .review-card { background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.08); border-radius:12px; padding:28px; margin-bottom:20px; }
+        .review-card .meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+        .review-card .stars { color:#d4af37; letter-spacing:2px; font-size:1.1rem; }
+        .review-card .date { color:#807060; font-size:0.85rem; }
+        .review-card p { color:#c0b8a0; line-height:1.8; font-size:0.95rem; }
+        .review-card .author { margin-top:12px; color:#d4af37; font-size:0.9rem; font-weight:500; }
+
+        /* FAQ */
+        .faq { padding:60px 0; background:rgba(255,255,255,0.01); border-top:1px solid rgba(212,175,55,0.05); }
+        .faq h2 { text-align:center; font-size:2rem; color:#f5edd8; margin-bottom:40px; }
+        .faq-item { border-bottom:1px solid rgba(212,175,55,0.08); padding:20px 0; }
+        .faq-item h3 { font-size:1.05rem; color:#e0d5c1; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+        .faq-item h3::after { content:'+'; font-size:1.4rem; color:#d4af37; }
+        .faq-item p { color:#a09880; margin-top:12px; line-height:1.8; font-size:0.95rem; display:none; }
+        .faq-item.active p { display:block; }
+        .faq-item.active h3::after { content:'−'; }
+
+        /* CTA */
+        .cta { padding:60px 0 80px; text-align:center; }
+        .cta h2 { font-size:2.2rem; color:#f5edd8; margin-bottom:16px; }
+        .cta p { color:#a09880; margin-bottom:32px; font-size:1.05rem; }
+        .cta .btn { display:inline-block; background:#d4af37; color:#0a0a0a; padding:16px 48px; border-radius:8px; font-weight:600; font-size:1.1rem; transition:all 0.3s; }
+        .cta .btn:hover { background:#f0d060; transform:translateY(-2px); box-shadow:0 8px 24px rgba(212,175,55,0.2); }
+
+        /* Footer */
+        footer { border-top:1px solid rgba(212,175,55,0.08); padding:40px 0; text-align:center; }
+        footer p { color:#605848; font-size:0.85rem; }
+
+        /* Responsive */
+        @media (max-width:768px) {
+            nav { display:none; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:rgba(10,10,10,0.98); padding:20px; gap:16px; border-bottom:1px solid rgba(212,175,55,0.1); }
+            nav.active { display:flex; }
+            .hamburger { display:flex; }
+            .hero h1 { font-size:2rem; }
+            .info-grid { grid-template-columns:1fr; gap:24px; }
+            .pricing table { font-size:0.9rem; }
+            .review-card .meta { flex-direction:column; align-items:flex-start; gap:6px; }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">◆ 노원더 연남</a>
+            <nav id="main-nav">
+                <a href="/">홈</a>
+                <a href="/info" style="color:#d4af37;">정보</a>
+                <a href="/review">후기</a>
+                <a href="tel:02-1234-5678" class="tel-link">02-1234-5678</a>
+            </nav>
+            <div class="hamburger" id="hamburger" onclick="document.getElementById('main-nav').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>연남 가라오케 <span>찐후기 정보</span></h1>
+            <p>노원더 연남점, 진짜 내돈내산으로 경험한 모든 것. 위치부터 가격, 시설까지 솔직하게 알려드림.</p>
+        </div>
+    </section>
+
+    <section class="container info-grid">
+        <div class="info-card">
+            <h2>기본 정보</h2>
+            <ul>
+                <li><strong>주소</strong> 서울 마포구 연남동 567-12, 2층</li>
+                <li><strong>전화</strong> 02-1234-5678</li>
+                <li><strong>영업시간</strong> 24시 (연중무휴)</li>
+                <li><strong>주차</strong> 건물 지하 주차장 (2시간 무료)</li>
+                <li><strong>예약</strong> 전화/카톡 예약 가능</li>
+            </ul>
+        </div>
+        <div class="info-card">
+            <h2>시설 안내</h2>
+            <ul>
+                <li><strong>룸 타입</strong> 2인실 / 4인실 / 6인실 / 단체실 (최대 15인)</li>
+                <li><strong>음향</strong> JBL 프로 오디오 시스템</li>
+                <li><strong>마이크</strong> 슈어 무선 마이크 2개 기본</li>
+                <li><strong>부가</strong> 무료 와이파이, 충전기, 담요</li>
+                <li><strong>금연</strong> 전 객실 금연 (로비 흡연실 있음)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="container pricing">
+        <h2>💰 가격표 (내돈내산 기준)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>평일 (월~목)</th>
+                    <th>주말/공휴일</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2인실 (1시간)</td>
+                    <td>25,000원</td>
+                    <td>30,000원</td>
+                    <td>음료 2잔 포함</td>
+                </tr>
+                <tr>
+                    <td>4인실 (1시간)</td>
+                    <td>40,000원</td>
+                    <td>50,000원</td>
+                    <td>음료 4잔 + 안주</td>
+                </tr>
+                <tr>
+                    <td>6인실 (1시간)</td>
+                    <td>55,000원</td>
+                    <td>70,000원</td>
+                    <td>음료 6잔 + 안주</td>
+                </tr>
+                <tr>
+                    <td>단체실 (2시간 패키지)</td>
+                    <td>150,000원</td>
+                    <td>200,000원</td>
+                    <td>맥주 6캔 + 안주</td>
+                </tr>
+                <tr>
+                    <td>심야 할인 (23시~06시)</td>
+                    <td>20% 할인</td>
+                    <td>10% 할인</td>
+                    <td>모든 룸 적용</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="container reviews">
+        <h2>💬 연남 가라오케 찐후기</h2>
+        <div class="review-card">
+            <div class="meta">
+                <span class="stars">★★★★★</span>
+                <span class="date">2024.12.15</span>
+            </div>
+            <p>친구들이랑 연말 모임으로 갔는데 진짜 대박이었어. 단체실 엄청 넓고 음향도 좋아서 다들 신나게 놀았음. 가격도 다른 데 비해 착한 편이고, 24시라서 끝까지 놀기 좋아. 연남 가라오케 찐후기 중에 제일 만족했던 곳!</p>
+            <div class="author">- 홍대단골킹</div>
+        </div>
+        <div class="review-card">
+            <div class="meta">
+                <span class="stars">★★★★☆</span>
+                <span class="date">2024.12.08</span>
+            </div>
+            <p>연남동에서 야간 데이트 마무리로 들렀는데 분위기 좋더라. 2인실도 아늑하고 마이크 음질 좋아서 노래방 가고 싶을 때 또 올듯. 단점은 주차장이 좀 좁은데, 건물 뒤에 공영주차장 있으니 참고하셈.</p>
+            <div class="author">- 연남워커</div>
+        </div>
+        <div class="review-card">
+            <div class="meta">
+                <span class="stars">★★★★★</span>
+                <span class="date">2024.11.30</span>
+            </div>
+            <p>회사 회식 후에 10명 정도 가서 단체실 썼는데 완전 만족. 맥주랑 안주도 나오고, 직원분들이 친절하게 응대해줘서 좋았어. 다음에 또 올게요~ 연남 가라오케 추천!</p>
+            <div class="author">- 직장인K</div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>❓ 자주 묻는 질문</h2>
+            <div class="faq-item active">
+                <h3>예약은 어떻게 하나요?</h3>
+                <p>전화(02-1234-5678) 또는 카카오톡 플러스친구 '노원더 연남'으로 실시간 예약 가능합니다. 원하는
+</body>
+</html>
